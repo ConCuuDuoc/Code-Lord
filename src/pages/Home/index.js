@@ -10,11 +10,14 @@ import img1 from '../../images/img1.svg';
 import img2 from '../../images/img2.svg';
 import star1 from '../../images/star.svg';
 import star2 from '../../images/star2.svg';
+import woman from '../../images/woman.svg';
 import ibm from '../../images/ibm.png';
 import google from '../../images/google.svg';
 import cisco from '../../images/cisco.svg';
 import meta from '../../images/meta.svg';
 import work from '../../images/work.svg';
+import target from '../../images/target.svg';
+import credit_card from '../../images/credit_card.svg';
 import line from '../../images/line.svg';
 import polygon from '../../images/polygon.svg';
 import leftbackgroundimg from '../../images/leftimagesbackground.svg';
@@ -343,18 +346,34 @@ function Home () {
                 </Container>
             </div>
             <Container className='how' >
+                
                 <Image className='background2' src={Background} alt='Background2' />
-
+                
                 <Row className='howcodelordworks'>
+                    
                     <p>
-                        <span className='How'>How </span>
-                        <span className="code code">Code</span> 
-                        <span className="lord lord">Lord</span>
-                        <span className='works'> works</span>
+                        <div className='koho-font'>
+                            <span className='How'>How </span>
+                            <span className="code code">Code</span> 
+                            <span className="lord lord">Lord</span>
+                            <span className='works'> works</span>
+                        </div>
+                        <div classname ="poppins-font" style={{position: 'relative', left: 850, top: -50,fontSize : '28px', textAlign:'left'}}>
+                            <span className="code code"  >Code</span> 
+                            <span className="lord lord" >Lord</span>
+                            <span className='Quoting'> is an IT education website 
+                            providing top-notch 
+                            </span>
+                            <span className='Quoting'>
+                                <br/> 
+                            courses and resources to boost your tech skills.
+                            </span>
+                        </div>
                     </p>
                 </Row>    
-
+                    
                 <Col className='instruction'> 
+                    
                     <Row className="boxsignup">
                         <div className="group-signup">
                             <div className="overlap-group">
@@ -366,7 +385,7 @@ function Home () {
                                     <span className="span">Sign up for a </span>
                                     <span className="text-wrapper-2">free account</span>
                                     <span className="span"> on </span>
-                                    <span className="text-wrapper-2">Code</span>
+                                    <span className="text-wrapper-2">Code </span>
                                     <span className="text-wrapper-3">Lord</span>
                                     <span className="text-wrapper-2">&nbsp;</span>
                                     <span className="span">to advance in IT and boost your career.</span>
@@ -375,44 +394,40 @@ function Home () {
                         </div>
                     </Row>
                     <Row className="boxsignup">
-                        <div className="group-signup">
+                        <div className="group-career">
                             <div className="overlap-group">
                                 <div className="overlap">
-                                    <Image className="element-business" alt="Element business" src = {work}/>
+                                    <Image className="element-target" alt="Element target" src = {target}/>
                                 </div>
-                                <div className="text-wrapper">Sign Up</div>
+                                <div className="text-wrapper">Select your Career path</div>
                                 <p className="sign-up-for-a-free">
-                                    <span className="span">Sign up for a </span>
-                                    <span className="text-wrapper-2">free account</span>
-                                    <span className="span"> on </span>
-                                    <span className="text-wrapper-2">Code</span>
-                                    <span className="text-wrapper-3">Lord</span>
-                                    <span className="text-wrapper-2">&nbsp;</span>
-                                    <span className="span">to advance in IT and boost your career.</span>
+                                    <span className="span">Explore courses by profession: </span>
+                                    <span className="text-wrapper-2">Front-end, Back-end, 
+                                    Cybersecurity, Data Science and beyond. </span>
+                                    
                                 </p>
                             </div>
                         </div>
                     </Row>
                     <Row className="boxsignup">
-                        <div className="group-signup">
+                        <div className="group-payment">
                             <div className="overlap-group">
                                 <div className="overlap">
-                                    <Image className="element-business" alt="Element business" src = {work}/>
+                                    <Image className="element-credit-card" alt="Element creditcard" src = {credit_card}/>
                                 </div>
-                                <div className="text-wrapper">Sign Up</div>
+                                <div className="text-wrapper">Select Payment</div>
+                                <Image className="woman_with_lap" src={woman} alt="a-woman-using-laptop" style={{position: 'absolute', left: 800,top: -590}}/> 
                                 <p className="sign-up-for-a-free">
-                                    <span className="span">Sign up for a </span>
-                                    <span className="text-wrapper-2">free account</span>
-                                    <span className="span"> on </span>
-                                    <span className="text-wrapper-2">Code</span>
-                                    <span className="text-wrapper-3">Lord</span>
-                                    <span className="text-wrapper-2">&nbsp;</span>
-                                    <span className="span">to advance in IT and boost your career.</span>
+                                    <span className="span">For paid courses, we accept payments via </span>
+                                    <span className="text-wrapper-2">VISA</span>
+                                    <span className="span"> or </span>
+                                    <span className="text-wrapper-2">Paypal</span>
                                 </p>
                             </div>
                         </div>
                     </Row>
                 </Col>
+                    
             </Container>
         </div>
       );
