@@ -3,6 +3,7 @@
     margin-left: 60px;
     margin-right: 700px;
     font-weight: bold;
+    font-family: 'Koho', sans-serif;
   }
 .code {
     color: #D9ECFF; 
@@ -47,6 +48,9 @@
 
 .poppins-font{
     font-family: 'Poppins', sans-serif;
+}
+.koho-font{
+  font-family: "Koho", sans-serif;
 }
 
 .limit {
@@ -441,7 +445,7 @@
 
 .instruction {
     text-align: center;
-    margin-top: 130px;
+    margin-left: -100px;
     color: #ffffff;
 }
 
@@ -1120,6 +1124,7 @@ margin-left: 38%;
     margin-top: -103%;
     font-weight: bold;
     font-size: 50px;
+    margin-left: -100px;
   }
 
   .howcodelordworks .How {
@@ -1129,4 +1134,10 @@ margin-left: 38%;
   .howcodelordworks .works {
     color: #FFFFFF
   }
+  .howcodelordworks .Quoting {
+    color: #FFFFFF;
+    font-weight: normal
+  }
+
+
   
