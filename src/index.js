@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
+import {Auth} from './App';
 import reportWebVitals from './reportWebVitals';
 import GlobalStyles from './Components/GlobalStyles';
 
@@ -9,6 +10,7 @@ root.render(
   <React.StrictMode>
     <GlobalStyles>
       <App />
+      <Auth />
     </GlobalStyles>
   </React.StrictMode>
 );
