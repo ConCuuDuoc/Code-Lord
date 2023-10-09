@@ -7,7 +7,7 @@ import Activate from './pages/Activate/Activate';
 import Resetpasswordconfirm from './pages/Resetpasswordconfirm/Resetpasswordconfirm';
 import { Provider } from 'react-redux';
 import React from 'react';
-import store from './Store.js';
+import store from './Store';
 import Layout from './layout/Layout.js';
 
 function App() {
@@ -29,12 +29,12 @@ export function Auth() {
         <div className="Auth">
           <Layout>
             <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/signup" element={<Register />} />
-              <Route path="/login" element={<Login />} />
-              <Route path="/activate/:uid/:token" element={<Activate />} />
-              <Route path="/reset_password" element={<Resetpassword />} />
-              <Route path="/password/reset/confirm/:uid/:token" element={<Resetpasswordconfirm />} />
+              <Route exact path="/" element={<Home />} />
+              <Route exact path="/signup" element={<Register />} />
+              <Route exact path="/login" element={<Login />} />
+              <Route exact path="/activate/:uid/:token" element={<Activate />} />
+              <Route exact path="/reset_password" element={<Resetpassword />} />
+              <Route exact path="/password/reset/confirm/:uid/:token" element={<Resetpasswordconfirm />} />
             </Routes>
           </Layout>
         </div>

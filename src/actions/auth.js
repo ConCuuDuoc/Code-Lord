@@ -133,7 +133,7 @@ export const signup = (name, email, password, re_password) => async dispatch => 
     }
 };
 
-export const verify = (uid, token) => async dispatch =>{
+export const verify = (uid, token) => async dispatch => {
     const config = {
         headers: {
             'Content-Type': 'application/json'
