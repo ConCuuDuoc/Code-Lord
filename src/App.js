@@ -9,7 +9,7 @@ import { Provider } from 'react-redux';
 import React from 'react';
 import store from './Store';
 import Layout from './layout/Layout.js';
-// import Dashboard from './pages/Dashboard/Dashboard';
+import Dashboard from './pages/Dashboard/Dashboard';
 // import ProfileSetting from './pages/ProfileSetting/ProfileSetting';
 
 function App() {
@@ -37,8 +37,8 @@ export function Auth() {
               <Route exact path="/activate/:uid/:token" element={<Activate />} />
               <Route exact path="/reset_password" element={<Resetpassword />} />
               <Route exact path="/password/reset/confirm/:uid/:token" element={<Resetpasswordconfirm />} />
-              {/* <Route exact path="/dashboard" element={<Dashboard />} />
-              <Route exact path="/setting" element={<ProfileSetting />} />  */}
+              <Route exact path="/dashboard" element={<Dashboard />} />
+              {/* <Route exact path="/setting" element={<ProfileSetting />} />  */}
             </Routes>
           </Layout>
         </div>
