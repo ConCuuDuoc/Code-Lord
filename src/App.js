@@ -10,7 +10,8 @@ import React from 'react';
 import store from './Store';
 import Layout from './layout/Layout.js';
 import Dashboard from './pages/Dashboard/Dashboard';
-// import ProfileSetting from './pages/ProfileSetting/ProfileSetting';
+import Setting from './pages/Setting/Setting';
+import ChangePassword from './pages/ChangePassword/ChangePassword';
 
 function App() {
   return (
@@ -38,7 +39,8 @@ export function Auth() {
               <Route exact path="/reset_password" element={<Resetpassword />} />
               <Route exact path="/password/reset/confirm/:uid/:token" element={<Resetpasswordconfirm />} />
               <Route exact path="/dashboard" element={<Dashboard />} />
-              {/* <Route exact path="/setting" element={<ProfileSetting />} />  */}
+              <Route exact path="/setting" element={<Setting />} /> 
+              <Route exact path="/changepassword" element={<ChangePassword />} />
             </Routes>
           </Layout>
         </div>

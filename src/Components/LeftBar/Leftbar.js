@@ -11,12 +11,13 @@ import signout from "./images/Logout.svg";
 
 
 function LeftBar () {
+  
   return (
       <div className="box">
           <div className="left-bar">
             <div className="overlap-12">
               <div className="rectangle-6" />
-              <div className="profile">
+              <div className="profilee">
                 <div className="rectangle-7" />
                 <div className="group-41">
                   <div className="text-wrapper-93">Profile</div>

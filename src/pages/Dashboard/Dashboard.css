@@ -1,4 +1,8 @@
 .dashboard-profile {
+  overflow-x: hidden;
+}
+
+.dashboard-profile {
     background-color: #0c0c0c;
     display: flex;
     flex-direction: row;
@@ -34,18 +38,18 @@
     width: 424px;
   }
   
-  /* .dashboard-profile .search-courses{
-    background-color: #0c0c0c;
+  .dashboard-profile .search{
+    /* background-color: #0c0c0c; */
     border-radius: 50px;
     height: 50px;
-    left: 372px;
+    left: 185px;
     position: absolute;
-    top: 43px;
+    top: 5px;
     width: 438px;
-  } */
+  }
   .dashboard-profile .search input{
     height: 50px;
-    left: 372px;
+    left: 185px;
     position: absolute;
     top: 43px;
     background-color: #0D0D0D;
@@ -53,6 +57,7 @@
 
   .dashboard-profile .text-color{
     color: #D0CECE
+
   }
   .dashboard-profile .group {
     height: 33px;
@@ -96,6 +101,7 @@
     top: 5px;
     width: 32px;
   }
+
   
   .dashboard-profile .overlap-group {
     height: 40px;

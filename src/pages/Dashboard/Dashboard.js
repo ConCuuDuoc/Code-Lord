@@ -2,8 +2,10 @@ import React, { useState } from "react";
 import "./Dashboard.css";
 
 import LeftBar from "../../Components/LeftBar/Leftbar"; 
+// import Header from "../../Components/Header/Header"; 
+
 import rectangle from "./images/rectangle-5.svg";
-import Search from "./images/Search.svg";
+// import Search from "./images/Search.svg";
 import Noti from "./images/Notification.svg";
 import Avatar from "./images/Allura Avatar.svg";
 import Group29 from "./images/Group 29.svg"
@@ -15,12 +17,12 @@ import Document from "./images/Document.svg"
 import Polygon from "./images/Polygon 1.svg"
 
 function Dashboard ()  {
-  const [searchText, setSearchText] = useState(""); // Trạng thái lưu trữ nội dung tìm kiếm
+  const [searchText, setSearchText] = useState(""); 
 
   const handleSearchChange = (e) => {
     setSearchText(e.target.value);
   };
-  
+
     
   return (
     <div className="dashboard-profile">
@@ -28,22 +30,15 @@ function Dashboard ()  {
         <div className="overlap">
           <div className="rectangle" />
           <img className="img" alt="Rectangle" src={rectangle}/>
+         
           <div className="search">
-            <div className="search-courses">
-                          <img
-                className="iconly-light-outline"
-                alt="Iconly light outline"
-                src={Search}
-            />
               <input
                 className="text-color"
                 type="text"
                 placeholder="Search Courses, Documents, Activities..."
                 value={searchText}
                 onChange={handleSearchChange}
-              />
-            </div>
-
+              />            
           </div>
           <div className="user">
             <div className="notification">
@@ -456,6 +451,7 @@ function Dashboard ()  {
             </div>
           </div>
           */<LeftBar />
+      
             </div>
           </div>
         </div>

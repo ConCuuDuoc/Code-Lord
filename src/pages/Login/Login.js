@@ -1,4 +1,5 @@
 import React, {useState} from "react";
+
 import {Navigate} from "react-router-dom";
 import {connect} from "react-redux";
 import { Image } from "react-bootstrap";
@@ -46,6 +47,7 @@ const Login = ({ login, isAuthenticated }) => {
                         </p>
                     </div>
                 </div>
+
             <div className="ellipse" />
                 <div className="overlap-group">
                     <div className="ellipse-2" />
