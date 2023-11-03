@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 import "./Leftbar.css";
 
 import home from "./images/Home.svg";
@@ -50,14 +51,17 @@ function LeftBar () {
                 <div className="text-wrapper-96">Course Cart</div>
                 <img className="group-43" alt="Group" src={cart} />
               </div>
-              <div className="settings">
-                <div className="text-wrapper-97">Settings</div>
-                <img
-                  className="iconly-light-outline-8"
-                  alt="Iconly light outline"
-                  src={setting}
-                />
-              </div>
+              <Link to="/setting">
+                <div className="settings">
+                  <div className="text-wrapper-97">Settings</div>
+                  <img
+                    className="iconly-light-outline-8"
+                    alt="Iconly light outline"
+                    src={setting}
+                  />
+                </div>
+              </Link>
+
               <div className="sign-out">
                 <div className="text-wrapper-98">Sign Out</div>
                 <img

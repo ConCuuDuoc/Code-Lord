@@ -12,6 +12,7 @@ import Layout from './layout/Layout.js';
 import Dashboard from './pages/Dashboard/Dashboard';
 import Setting from './pages/Setting/Setting';
 import ChangePassword from './pages/ChangePassword/ChangePassword';
+import Categories from './pages/Categories/Categories';
 
 function App() {
   return (
@@ -41,6 +42,7 @@ export function Auth() {
               <Route exact path="/dashboard" element={<Dashboard />} />
               <Route exact path="/setting" element={<Setting />} /> 
               <Route exact path="/changepassword" element={<ChangePassword />} />
+              <Route exact path="/categories" element={<Categories />} />
             </Routes>
           </Layout>
         </div>

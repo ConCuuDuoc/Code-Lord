@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from 'react-router-dom';
 import "./Setting.css";
 
 const Setting = () => {
@@ -24,7 +25,9 @@ const Setting = () => {
       <div className="dashboard-profile-settings-child" />
       <div className="change-settings-wrapper">
         <h1 className="change-settings-title">Change Settings</h1>
-        <h3 className="change-settings-password">Change Password</h3>
+        <h3 className="change-settings-password">
+          <Link to="/changepassword">Change Password</Link>
+        </h3>
         <form onSubmit={handleSubmit}>
           <div className="form-group">
             <label htmlFor="name">Name: </label>
