@@ -13,6 +13,7 @@ import Dashboard from './pages/Dashboard/Dashboard';
 import Setting from './pages/Setting/Setting';
 import ChangePassword from './pages/ChangePassword/ChangePassword';
 import Categories from './pages/Categories/Categories';
+import MyLearning from './pages/MyLearning/MyLearning';
 
 function App() {
   return (
@@ -43,6 +44,7 @@ export function Auth() {
               <Route exact path="/setting" element={<Setting />} /> 
               <Route exact path="/changepassword" element={<ChangePassword />} />
               <Route exact path="/categories" element={<Categories />} />
+              <Route exact path="/mylearning" element={<MyLearning />} />
             </Routes>
           </Layout>
         </div>
@@ -52,3 +54,16 @@ export function Auth() {
 }
 
 export default App;
+
+
+
+
+
+
+
+
+
+
+
+
+
