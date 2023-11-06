@@ -2,9 +2,9 @@
     position: relative;
     width: 509px;
     height: 462px;
-    margin: 50px;
+    margin: 30px;
     border-radius: 30px;
-    background-color: #3D4E64;
+    background-color: #20344a;
     color: #fff; 
   }
   
@@ -18,7 +18,7 @@
     height: 15.25%;
     width: 85%;
     top: 25.36%;
-    left: 75px;
+    left: 6.68%;
     line-height: 40px;
     display: inline-block;
     font-family: var(--font-koho);
@@ -48,7 +48,7 @@
       height: 3.39%;
       width: 20.77%;
       top: 12.22%;
-      left: 15%;
+      left: 6.68%;
       line-height: 18px;
       font-weight: 500;
       display: inline-block;
@@ -61,30 +61,39 @@
       top: 11.69%;
       left: 71.12%;
       line-height: 18px;
-      font-weight: 500;
+      font-weight: 400;
       color: var(--color-white);
       display: inline-block;
-      left:1000px;
     }
   
   
     .course-skills{
       position: absolute;
       top: 225px;
-      left: 75px;
+      left: 6.68%;
       font-size: var(--font-size-lg);
       color: var(--color-lightsteelblue);
       display: inline-block;
-      width: 1000px;
+      width: 100%;
       font-family: var(--font-poppins);
     }
   
     .course-source{
       position: absolute;
       top: 347px;
-      left: 1000px;
+      left: 80%;
       border-radius: var(--br-21xl);
       width: 69px;
       height: 69px;
       object-fit: cover;
+    }
+
+    .line{
+      position: absolute;
+      top: 320.5px;
+      left: 33.76px;
+      border-top: 1px solid var(--color-lavender-300);
+      box-sizing: border-box;
+      width: 434.61px;
+      height: 1px;
     }

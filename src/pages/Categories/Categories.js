@@ -1,5 +1,6 @@
 import React from "react";
 import "./Categories.css";
+import CourseItem from '../../Components/CourseItem/CourseItem'
 
 import LeftBar from "../../Components/LeftBar/Leftbar"; 
 import Header from "../../Components/Header/Header"; 
@@ -87,7 +88,7 @@ const Categories = () => {
           Developing Back-End Apps with Node.js and Express
         </b>
         <div className="group-dev-backend-item" />
-        <div className="x-lesson">38x Lesson</div>
+        <div className="x-lesson">$200</div>
         <img className="group-dev-backend-inner" alt="" src={polygon} />
         <div className="line-div" />
         <div className="text">
@@ -95,19 +96,20 @@ const Categories = () => {
           <span>{`Computer Programming, Web Development `}</span>
         </div>
         <div className="button-base">
-          <b className="text1">Join</b>
+          <b className="text1">Buy</b>
         </div>
         <div className="rectangle-div" />
         <div className="back-end1">Back-end</div>
         <img className="rectangle-icon" alt="" src={meta} />
       </div>
+
       <div className="group-introduce-front-end">
         <div className="group-introduce-front-end-child" />
         <b className="introduction-to-back">
           Introduction to Back - End Development
         </b>
         <div className="group-introduce-front-end-item" />
-        <div className="x-lesson1">25x Lesson</div>
+        <div className="x-lesson1">$100</div>
         <img
           className="group-introduce-front-end-inner"
           alt=""
@@ -126,7 +128,7 @@ const Categories = () => {
           <span> Web Development</span>
         </div>
         <div className="button-base1">
-          <b className="text1">Join</b>
+          <b className="text1">Buy</b>
         </div>
       </div>
     </div>
