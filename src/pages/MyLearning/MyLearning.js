@@ -3,7 +3,7 @@ import "./MyLearning.css";
 import meta from "./images/meta.svg"
 
 const CourseCard = ({ title, lessons, category, skills, progress, source }) => {
-  const progressBarWidth = `${parseFloat(progress) * 12}px`; // Chuyển progress thành chiều rộng (ví dụ: 50% => 500px)
+  const progressBarWidth = `${parseFloat(progress) * 12}px`; 
 
   return (
     <div className="course-card">

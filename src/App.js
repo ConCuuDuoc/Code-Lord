@@ -14,6 +14,9 @@ import Setting from './pages/Setting/Setting';
 import ChangePassword from './pages/ChangePassword/ChangePassword';
 import Categories from './pages/Categories/Categories';
 import MyLearning from './pages/MyLearning/MyLearning';
+import Overview from './pages/Overview/Overview';
+
+
 
 function App() {
   return (
@@ -45,6 +48,8 @@ export function Auth() {
               <Route exact path="/changepassword" element={<ChangePassword />} />
               <Route exact path="/categories" element={<Categories />} />
               <Route exact path="/mylearning" element={<MyLearning />} />
+              <Route exact path="/overview" element={<Overview />} />
+
             </Routes>
           </Layout>
         </div>
