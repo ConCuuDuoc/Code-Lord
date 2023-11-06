@@ -1,5 +1,7 @@
-.dashboard-profile {
-  overflow-x: hidden;
+.header-container {
+  top: 0; 
+  z-index: 100; 
+  background-color: transparent; 
 }
 
 .dashboard-profile {
@@ -18,47 +20,26 @@
   
   .dashboard-profile .overlap {
     height: 1365px;
-    position: relative;
+    position: absolute;
   }
   
   .dashboard-profile .rectangle {
     background-color: #0e1620;
     height: 1365px;
-    left: 117px;
+    left: 135px;
     position: absolute;
-    top: 0;
-    width: 1390px;
+    top: -8px;
+    width: 1920px;
   }
   
   .dashboard-profile .img {
     height: 1365px;
     left: 1496px;
     position: absolute;
-    top: 0;
+    top: -8px;
     width: 424px;
   }
-  
-  .dashboard-profile .search{
-    /* background-color: #0c0c0c; */
-    border-radius: 50px;
-    height: 50px;
-    left: 185px;
-    position: absolute;
-    top: 5px;
-    width: 438px;
-  }
-  .dashboard-profile .search input{
-    height: 50px;
-    left: 185px;
-    position: absolute;
-    top: 43px;
-    background-color: #0D0D0D;
-  }
 
-  .dashboard-profile .text-color{
-    color: #D0CECE
-
-  }
   .dashboard-profile .group {
     height: 33px;
     left: 18px;
@@ -66,16 +47,6 @@
     top: 9px;
     width: 333px;
   }
-  
-
-  .dashboard-profile .iconly-light-outline {
-    height: 33px;
-    left: 10px;
-    position: absolute;
-    top: 10px;
-    width: 32px;
-  }
-
   
   .dashboard-profile .user {
     height: 50px;
@@ -108,13 +79,6 @@
     position: relative;
   }
   
-  .dashboard-profile .iconly-light-outline-2 {
-    height: 37px;
-    left: 0;
-    position: absolute;
-    top: 3px;
-    width: 32px;
-  }
   
   .dashboard-profile .ellipse {
     background-color: #ee0000;
@@ -126,52 +90,12 @@
     width: 9px;
   }
   
-  .dashboard-profile .profile {
-    background-color: #141414;
-    border-radius: 10px;
-    height: 50px;
-    left: 78px;
-    position: absolute;
-    top: 0;
-    width: 262px;
-  }
-  
   .dashboard-profile .div {
     height: 40px;
     left: 13px;
     position: absolute;
     top: 5px;
     width: 129px;
-  }
-  
-  .dashboard-profile .allura-avatar {
-    height: 40px;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 47px;
-  }
-  
-  .dashboard-profile .allura-avatar-2 {
-    background-color: #1984ff;
-    border-radius: 9.59px;
-    height: 40px;
-    left: 3px;
-    position: absolute;
-    top: 0;
-    width: 42px;
-  }
-  
-  .dashboard-profile .text-wrapper {
-    color: #d0cece;
-    font-family: "Poppins", Helvetica;
-    font-size: 15px;
-    font-weight: 600;
-    left: 60px;
-    letter-spacing: -0.45px;
-    line-height: normal;
-    position: absolute;
-    top: 8px;
   }
   
   .dashboard-profile .icon-chevron-left {
@@ -301,7 +225,7 @@
   
   .dashboard-profile .text-wrapper-4 {
     color: #d0cece;
-    font-family: "Open Sans", Helvetica;
+    font-family: 'KoHo', sans-serif;
     font-size: 16.5px;
     font-weight: 700;
     height: 20px;
@@ -316,7 +240,7 @@
   
   .dashboard-profile .text-wrapper-5 {
     color: #d0cece;
-    font-family: "Open Sans", Helvetica;
+    font-family: 'KoHo', sans-serif;
     font-size: 20px;
     font-weight: 700;
     height: 20px;
@@ -1029,7 +953,7 @@
   
   .dashboard-profile .text-wrapper-43 {
     color: #d0cece;
-    font-family: "Open Sans", Helvetica;
+    font-family: 'KoHo', sans-serif;
     font-size: 20px;
     font-weight: 700;
     height: 27px;
@@ -1043,7 +967,7 @@
   
   .dashboard-profile .text-wrapper-44 {
     color: #21b573;
-    font-family: "Open Sans", Helvetica;
+    font-family: 'KoHo', sans-serif;
     font-size: 13px;
     font-weight: 700;
     height: 18px;
@@ -1099,7 +1023,7 @@
   
   .dashboard-profile .text-wrapper-45 {
     color: #0c0c0c;
-    font-family: "Open Sans", Helvetica;
+    font-family: 'KoHo', sans-serif;
     font-size: 25px;
     font-weight: 700;
     height: 34px;
@@ -1121,7 +1045,7 @@
   
   .dashboard-profile .text-wrapper-46 {
     color: #d0cece;
-    font-family: "Open Sans", Helvetica;
+    font-family: 'KoHo', sans-serif;
     font-size: 15px;
     font-weight: 700;
     left: 0;
@@ -1133,7 +1057,7 @@
   
   .dashboard-profile .p {
     color: #d0cece;
-    font-family: "Open Sans", Helvetica;
+    font-family: 'KoHo', sans-serif;
     font-size: 10px;
     font-weight: 700;
     left: 0;
@@ -1153,7 +1077,7 @@
   
   .dashboard-profile .text-wrapper-47 {
     color: #d0cece;
-    font-family: "Open Sans", Helvetica;
+    font-family: 'KoHo', sans-serif;
     font-size: 10px;
     font-weight: 700;
     left: 0;
@@ -1165,7 +1089,7 @@
   
   .dashboard-profile .text-wrapper-48 {
     color: #d0cece;
-    font-family: "Open Sans", Helvetica;
+    font-family: 'KoHo', sans-serif;
     font-size: 10px;
     font-weight: 700;
     left: 126px;
@@ -1227,7 +1151,7 @@
   
   .dashboard-profile .text-wrapper-49 {
     color: #0c0c0c;
-    font-family: "Open Sans", Helvetica;
+    font-family: 'KoHo', sans-serif;
     font-size: 25px;
     font-weight: 700;
     height: 34px;
@@ -1296,7 +1220,7 @@
   
   .dashboard-profile .text-wrapper-50 {
     color: #0c0c0c;
-    font-family: "Open Sans", Helvetica;
+    font-family: 'KoHo', sans-serif;
     font-size: 25px;
     font-weight: 700;
     height: 34px;
@@ -1318,7 +1242,7 @@
   
   .dashboard-profile .text-wrapper-51 {
     color: #d0cece;
-    font-family: "Open Sans", Helvetica;
+    font-family: 'KoHo', sans-serif;
     font-size: 10px;
     font-weight: 700;
     left: 0;
@@ -1370,7 +1294,7 @@
   
   .dashboard-profile .text-wrapper-52 {
     color: #0c0c0c;
-    font-family: "Open Sans", Helvetica;
+    font-family: 'KoHo', sans-serif;
     font-size: 25px;
     font-weight: 700;
     height: 34px;
@@ -1400,7 +1324,7 @@
   
   .dashboard-profile .text-wrapper-53 {
     color: #d0cece;
-    font-family: "Open Sans", Helvetica;
+    font-family: 'KoHo', sans-serif;
     font-size: 10px;
     font-weight: 700;
     left: 151px;
@@ -1496,7 +1420,7 @@
   
   .dashboard-profile .text-wrapper-56 {
     color: #d0cece;
-    font-family: "Open Sans", Helvetica;
+    font-family: 'KoHo', sans-serif;
     font-size: 10px;
     font-weight: 700;
     left: 0;
@@ -1601,7 +1525,7 @@
   
   .dashboard-profile .text-wrapper-61 {
     color: #d0cece;
-    font-family: "Open Sans", Helvetica;
+    font-family: 'KoHo', sans-serif;
     font-size: 10px;
     font-weight: 700;
     left: 0;
@@ -1656,7 +1580,7 @@
   
   .dashboard-profile .text-wrapper-64 {
     color: #d0cece;
-    font-family: "Open Sans", Helvetica;
+    font-family: 'KoHo', sans-serif;
     font-size: 10px;
     font-weight: 700;
     left: 0;
@@ -1719,7 +1643,7 @@
   
   .dashboard-profile .text-wrapper-65 {
     color: #d0cece;
-    font-family: "Open Sans", Helvetica;
+    font-family: 'KoHo', sans-serif;
     font-size: 15px;
     font-weight: 700;
     left: 13px;
@@ -1748,7 +1672,7 @@
   
   .dashboard-profile .element-points {
     color: #d0cece;
-    font-family: "Open Sans", Helvetica;
+    font-family: 'KoHo', sans-serif;
     font-size: 10px;
     font-weight: 700;
     left: 91px;
@@ -1761,7 +1685,7 @@
   
   .dashboard-profile .text-wrapper-66 {
     color: #d0cece;
-    font-family: "Open Sans", Helvetica;
+    font-family: 'KoHo', sans-serif;
     font-size: 15px;
     font-weight: 700;
     left: 91px;
@@ -1821,7 +1745,7 @@
   
   .dashboard-profile .element-points-2 {
     color: #333333;
-    font-family: "Open Sans", Helvetica;
+    font-family: 'KoHo', sans-serif;
     font-size: 10px;
     font-weight: 700;
     left: 91px;
@@ -1834,7 +1758,7 @@
   
   .dashboard-profile .text-wrapper-68 {
     color: #333333;
-    font-family: "Open Sans", Helvetica;
+    font-family: 'KoHo', sans-serif;
     font-size: 15px;
     font-weight: 700;
     left: 91px;
@@ -1921,7 +1845,7 @@
   
   .dashboard-profile .text-wrapper-71 {
     color: #333333;
-    font-family: "Open Sans", Helvetica;
+    font-family: 'KoHo', sans-serif;
     font-size: 15px;
     font-weight: 700;
     left: 94px;
@@ -1934,7 +1858,7 @@
   
   .dashboard-profile .element-points-3 {
     color: #333333;
-    font-family: "Open Sans", Helvetica;
+    font-family: 'KoHo', sans-serif;
     font-size: 10px;
     font-weight: 700;
     left: 94px;
@@ -1963,7 +1887,7 @@
   
   .dashboard-profile .text-wrapper-72 {
     color: #333333;
-    font-family: "Open Sans", Helvetica;
+    font-family: 'KoHo', sans-serif;
     font-size: 15px;
     font-weight: 700;
     left: 91px;
@@ -2005,7 +1929,7 @@
   
   .dashboard-profile .element-points-4 {
     color: #333333;
-    font-family: "Open Sans", Helvetica;
+    font-family: 'KoHo', sans-serif;
     font-size: 10px;
     font-weight: 700;
     left: 91px;
@@ -2126,7 +2050,7 @@
   
   .dashboard-profile .text-wrapper-76 {
     color: #d0cece;
-    font-family: "Open Sans", Helvetica;
+    font-family: 'KoHo', sans-serif;
     font-size: 15px;
     font-weight: 700;
     left: 23px;
@@ -2139,7 +2063,7 @@
   
   .dashboard-profile .text-wrapper-77 {
     color: #21b573;
-    font-family: "Open Sans", Helvetica;
+    font-family: 'KoHo', sans-serif;
     font-size: 13px;
     font-weight: 700;
     left: 361px;
@@ -2192,7 +2116,7 @@
   
   .dashboard-profile .text-wrapper-78 {
     color: #d0cece;
-    font-family: "Open Sans", Helvetica;
+    font-family: 'KoHo', sans-serif;
     font-size: 10px;
     font-weight: 600;
     left: 230px;
@@ -2213,7 +2137,7 @@
   
   .dashboard-profile .dear-ayo-you-are-yet {
     color: #d0cece;
-    font-family: "Open Sans", Helvetica;
+    font-family: 'KoHo', sans-serif;
     font-size: 10px;
     font-weight: 600;
     left: 0;
@@ -2226,7 +2150,7 @@
   
   .dashboard-profile .text-wrapper-79 {
     color: #d0cece;
-    font-family: "Open Sans", Helvetica;
+    font-family: 'KoHo', sans-serif;
     font-size: 15px;
     font-weight: 700;
     left: 0;
@@ -2284,7 +2208,7 @@
   
   .dashboard-profile .text-wrapper-81 {
     color: #d0cece;
-    font-family: "Open Sans", Helvetica;
+    font-family: 'KoHo', sans-serif;
     font-size: 10px;
     font-weight: 600;
     left: 235px;
@@ -2305,7 +2229,7 @@
   
   .dashboard-profile .text-wrapper-82 {
     color: #d0cece;
-    font-family: "Open Sans", Helvetica;
+    font-family: 'KoHo', sans-serif;
     font-size: 10px;
     font-weight: 600;
     left: 0;
@@ -2345,7 +2269,7 @@
   
   .dashboard-profile .text-wrapper-83 {
     color: #21b573;
-    font-family: "Open Sans", Helvetica;
+    font-family: 'KoHo', sans-serif;
     font-size: 10px;
     font-weight: 700;
     left: 20px;
@@ -2356,13 +2280,6 @@
     width: 54px;
   }
   
-  .dashboard-profile .iconly-light-outline-3 {
-    height: 14px;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 14px;
-  }
   
   .dashboard-profile .group-34 {
     border: 1px solid;
@@ -2383,17 +2300,9 @@
     width: 70px;
   }
   
-  .dashboard-profile .iconly-light-outline-4 {
-    height: 14px;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 15px;
-  }
-  
   .dashboard-profile .text-wrapper-84 {
     color: #21b573;
-    font-family: "Open Sans", Helvetica;
+    font-family: 'KoHo', sans-serif;
     font-size: 10px;
     font-weight: 700;
     left: 20px;
@@ -2433,7 +2342,7 @@
   
   .dashboard-profile .text-wrapper-85 {
     color: #21b573;
-    font-family: "Open Sans", Helvetica;
+    font-family: 'KoHo', sans-serif;
     font-size: 10px;
     font-weight: 700;
     left: 16px;
@@ -2446,7 +2355,7 @@
   
   .dashboard-profile .text-wrapper-86 {
     color: #d0cece;
-    font-family: "Open Sans", Helvetica;
+    font-family: 'KoHo', sans-serif;
     font-size: 15px;
     font-weight: 700;
     left: 0;
@@ -2488,7 +2397,7 @@
   
   .dashboard-profile .text-wrapper-88 {
     color: #d0cece;
-    font-family: "Open Sans", Helvetica;
+    font-family: 'KoHo', sans-serif;
     font-size: 10px;
     font-weight: 600;
     left: 329px;
@@ -2530,7 +2439,7 @@
   
   .dashboard-profile .text-wrapper-90 {
     color: #d0cece;
-    font-family: "Open Sans", Helvetica;
+    font-family: 'KoHo', sans-serif;
     font-size: 15px;
     font-weight: 700;
     left: 0;
@@ -2543,7 +2452,7 @@
   
   .dashboard-profile .text-wrapper-91 {
     color: #d0cece;
-    font-family: "Open Sans", Helvetica;
+    font-family: 'KoHo', sans-serif;
     font-size: 10px;
     font-weight: 600;
     left: 0;
@@ -2583,7 +2492,7 @@
   
   .dashboard-profile .text-wrapper-92 {
     color: #21b573;
-    font-family: "Open Sans", Helvetica;
+    font-family: 'KoHo', sans-serif;
     font-size: 10px;
     font-weight: 700;
     left: 19px;
@@ -2694,14 +2603,6 @@
     width: 149px;
   }
   
-  .dashboard-profile .iconly-light-outline-6 {
-    height: 30px;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 39px;
-  }
-  
   .dashboard-profile .categories {
     height: 37px;
     left: 52px;
@@ -2721,14 +2622,6 @@
     position: absolute;
     top: 4px;
     width: 120px;
-  }
-  
-  .dashboard-profile .iconly-light-outline-7 {
-    height: 37px;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 33px;
   }
   
   .dashboard-profile .course-cart {
@@ -2779,14 +2672,6 @@
     position: absolute;
     top: 4px;
     width: 85px;
-  }
-  
-  .dashboard-profile .iconly-light-outline-8 {
-    height: 34px;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 32px;
   }
   
   .dashboard-profile .sign-out {

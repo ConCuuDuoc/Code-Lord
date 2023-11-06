@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { Link } from 'react-router-dom';
 import "./Setting.css";
+import LeftBar from "../../Components/LeftBar/Leftbar";
+import Header from "../../Components/Header/Header";
 
 const Setting = () => {
   const [formData, setFormData] = useState({
@@ -23,6 +25,8 @@ const Setting = () => {
   return (
     <div className="dashboard-profile-settings">
       <div className="dashboard-profile-settings-child" />
+      <LeftBar />
+      <Header />
       <div className="change-settings-wrapper">
         <h1 className="change-settings-title">Change Settings</h1>
         <h3 className="change-settings-password">

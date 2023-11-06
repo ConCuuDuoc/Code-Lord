@@ -44,7 +44,7 @@ export function Auth() {
               <Route exact path="/reset_password" element={<Resetpassword />} />
               <Route exact path="/password/reset/confirm/:uid/:token" element={<Resetpasswordconfirm />} />
               <Route exact path="/dashboard" element={<Dashboard />} />
-              <Route exact path="/setting" element={<Setting />} /> 
+              <Route exact path="/settings" element={<Setting />} /> 
               <Route exact path="/changepassword" element={<ChangePassword />} />
               <Route exact path="/categories" element={<Categories />} />
               <Route exact path="/mylearning" element={<MyLearning />} />
