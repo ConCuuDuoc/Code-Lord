@@ -1,21 +1,6 @@
-  .box {
+.box {
     height: 1365px;
     width: 272px;
-    z-index: -1;
-  }
-  
-  .code {
-    font-size: 50px;
-    font-weight: bold;
-    font-family: 'Koho', sans-serif;
-    color: #D9ECFF; 
-  }
-
-  .lord {
-    font-size: 50px;
-    font-weight: bold;
-    font-family: 'Koho', sans-serif;
-    color: #21B573; 
   }
   
   .box .left-bar {
@@ -26,10 +11,10 @@
     width: 272px;
   }
   
-  .box .overlap {
+  .box .overlap-group {
     height: 1365px;
     position: relative;
-    width: 272px;
+    width: 270px;
   }
   
   .box .rectangle {
@@ -40,6 +25,15 @@
     position: absolute;
     top: 0;
     width: 270px;
+  }
+  
+  .box .profilee {
+    background-color: #21354b;
+    height: 61px;
+    left: 2px;
+    position: absolute;
+    top: 257px;
+    width: 265px;
   }
   
   .box .div {
@@ -59,6 +53,19 @@
     width: 128px;
   }
   
+  .box .text-wrapper {
+    color: #21b573;
+    font-family: "Poppins-Bold", Helvetica;
+    font-size: 20px;
+    font-weight: 700;
+    left: 39px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 8px;
+    width: 87px;
+  }
+
   .box .image-girl{
     position: absolute;
     top: 7px;
@@ -67,7 +74,23 @@
     height: 38px;
     object-fit: cover;
   }
-
+  
+  .box .iconly-bold-home {
+    height: 35px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 33px;
+  }
+  
+  .box .my-learning {
+    height: 33px;
+    left: 52px;
+    position: absolute;
+    top: 384px;
+    width: 192px;
+  }
+  
   .box .div-wrapper {
     height: 30px;
     left: 43px;
@@ -76,68 +99,78 @@
     width: 151px;
   }
   
-  .box .text-wrapper-lb {
+  .box .text-wrapper-2 {
     color: #d0cece;
     font-family: "Poppins-Bold", Helvetica;
     font-size: 20px;
     font-weight: 700;
-    left: 50px;
+    left: 0;
     letter-spacing: 0;
     line-height: normal;
     position: absolute;
     top: 0;
     width: 149px;
   }
-
-  .box .iconly-bold-home {
-    height: 34px;
-    left: 0;
-    position: absolute;
-    top: -5px;
-    width: 39px;
-  }
   
   .box .iconly-light-outline {
-    height: 34px;
+    height: 30px;
     left: 0;
     position: absolute;
-    top: -5px;
+    top: 0;
     width: 39px;
-  }
-
-  .box .profilee {
-    height: 33px;
-    left: 52px;
-    position: absolute;
-    top: 200px;
-    width: 265px;
-  }
-  
-  .box .my-learning {
-    height: 33px;
-    left: 52px;
-    position: absolute;
-    top: 300px;
-    width: 192px;
   }
   
   .box .categories {
     height: 37px;
     left: 52px;
     position: absolute;
-    top: 400px;
+    top: 494px;
     width: 163px;
   }
-
+  
+  .box .text-wrapper-3 {
+    color: #d0cece;
+    font-family: "Poppins-Bold", Helvetica;
+    font-size: 20px;
+    font-weight: 700;
+    left: 41px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 4px;
+    width: 120px;
+  }
+  
+  .box .img {
+    height: 37px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 33px;
+  }
+  
   .box .course-cart {
     height: 36px;
     left: 52px;
     position: absolute;
-    top: 500px;
+    top: 604px;
     width: 195px;
   }
   
-  .box .group {
+  .box .text-wrapper-4 {
+    color: #d0cece;
+    font-family: "Poppins-Bold", Helvetica;
+    font-size: 20px;
+    font-weight: 700;
+    left: 40px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 6px;
+    width: 153px;
+  }
+  
+  .box .group-2 {
     height: 36px;
     left: -1px;
     position: absolute;
@@ -149,8 +182,29 @@
     height: 34px;
     left: 52px;
     position: absolute;
-    top: 600px;
+    top: 723px;
     width: 128px;
+  }
+  
+  .box .text-wrapper-5 {
+    color: #d0cece;
+    font-family: "Poppins-Bold", Helvetica;
+    font-size: 20px;
+    font-weight: 700;
+    left: 41px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 4px;
+    width: 85px;
+  }
+  
+  .box .iconly-light-outline-2 {
+    height: 34px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 32px;
   }
 
   .box .sign-out {
@@ -164,6 +218,38 @@
     position: absolute;
     top: 850px;
     width: 87px;
+
+    }
+    
+
+    .box .iconly-light-outline-9 {
+      height: 31px;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 32px;
+    }
+    
+  
+  .box .text-wrapper-6 {
+    color: #e86e6e;
+    font-family: "Poppins-Bold", Helvetica;
+    font-size: 20px;
+    font-weight: 700;
+    left: 41px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 3px;
+    width: 87px;
+  }
+  
+  .box .iconly-light-outline-3 {
+    height: 31px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 32px;
   }
   
   .box .codelord-logo {
