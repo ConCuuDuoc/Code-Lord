@@ -1,12 +1,13 @@
 import React from "react";
 import "./Overview.css";
 import Button from 'react-bootstrap/Button';
-
+import LeftBar from "../../Components/LeftBar/Leftbar"; 
 
 const Overview = () => {
 
   return (
     <div className="overview-of-course">
+      <LeftBar /> 
       <img className="toggle-icon" alt="" src="/toggle.svg" />
       <div className="resources">Overview</div>
       <div className="resources2">{`Cyber Security -> Developing Secure Software`}</div>

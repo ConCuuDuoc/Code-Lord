@@ -1,6 +1,8 @@
 import React from "react";
 import "./Categories.css";
 
+import LeftBar from "../../Components/LeftBar/Leftbar"; 
+import Header from "../../Components/Header/Header"; 
 import Cyber from "./images/cyber-security-icon.svg";
 import FE from "./images/front-end-icon.svg";
 import BE from "./images/back-end-icon.svg";
@@ -15,6 +17,8 @@ import meta from "./images/meta.svg"
 const Categories = () => {
   return (
     <div className="dashboard-categories">
+      <LeftBar />
+      <Header />
       <div className="all-courses">Career Paths</div>
       <div className="all-courses1">{`Back - End `}</div>
       <div className="group-transition-banner">

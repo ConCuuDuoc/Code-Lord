@@ -1,5 +1,3 @@
-/* Tạo một container để căn giữa form */
-
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=KoHo:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap");
@@ -8,6 +6,7 @@ body {
   margin: 0;
   line-height: normal;
 }
+
 :root {
   /* fonts */
   --font-poppins: Poppins;
@@ -52,18 +51,16 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh; /* Đảm bảo form nằm giữa màn hình */
-  font-family: 'Poppins', sans-serif; /* Sử dụng font Poppins */
+  height: 100%; 
+  font-family: 'Poppins', sans-serif; 
   background-color: #0E1620;
-  
 }
 .dashboard-profile-settings-child {
   border-radius: 0 var(--br-11xl) var(--br-11xl) 0;
   height: 1365px;
 }
-/* Định dạng các dòng name, email, day of birth, language */
 .dashboard-profile-settings form {
-  width: 400px; /* Điều chỉnh độ rộng của form theo ý muốn */
+  width: 400px; 
 }
 
 .dashboard-profile-settings label {
@@ -90,8 +87,6 @@ body {
   margin-bottom: 20px;
 }
 
-
-
 .dashboard-profile-settings button {
   padding: 10px 20px;
   border: none;
@@ -100,8 +95,6 @@ body {
   cursor: pointer;
   font-family: 'Poppins', sans-serif; 
 }
-
-
 
 .dashboard-profile-settings button {
   background-color: #007bff;
@@ -129,10 +122,8 @@ body {
   color: white;
   position: absolute;
   top: 550px;
-
 }
 
 .form-group{
   margin-bottom: 20px;
 }
-

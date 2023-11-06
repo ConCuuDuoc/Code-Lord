@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import LeftBar from "../../Components/LeftBar/Leftbar"; 
 import "./ChangePassword.css";
 
 const Setting = () => {
@@ -25,6 +26,7 @@ const Setting = () => {
 
   return (
     <div className="dashboard-profile-settings">
+      <LeftBar />
       <div className="dashboard-profile-settings-child" />
       <div className="change-settings-wrapper">
         <h1 className="change-settings-title">Change Password</h1>

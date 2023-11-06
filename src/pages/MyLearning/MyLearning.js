@@ -1,12 +1,16 @@
 import React from "react";
 import "./MyLearning.css";
 import meta from "./images/meta.svg"
+import LeftBar from "../../Components/LeftBar/Leftbar";
+import Header from "../../Components/Header/Header";
 
 const CourseCard = ({ title, lessons, category, skills, progress, source }) => {
   const progressBarWidth = `${parseFloat(progress) * 12}px`; 
 
   return (
     <div className="course-card">
+      <LeftBar />
+      <Header />
       <div className="course-title">{title}</div>
       <div className="course-info">
         <div className="course-lessons">{`${lessons} Lessons`}</div>

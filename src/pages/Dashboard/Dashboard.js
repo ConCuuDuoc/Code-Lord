@@ -1,13 +1,9 @@
-import React, { useState } from "react";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import React from "react";
 import "./Dashboard.css";
-
 import LeftBar from "../../Components/LeftBar/Leftbar"; 
-// import Header from "../../Components/Header/Header"; 
-
+import Header from "../../Components/Header/Header"; 
 import rectangle from "./images/rectangle-5.svg";
-// import Search from "./images/Search.svg";
-import Noti from "./images/Notification.svg";
-import Avatar from "./images/Allura Avatar.svg";
 import Group29 from "./images/Group 29.svg"
 import Group1 from "./images/Group1.svg"
 import Group28 from "./images/Group 28.svg"
@@ -16,55 +12,21 @@ import Group from "./images/Group.svg"
 import Document from "./images/Document.svg"
 import Polygon from "./images/Polygon 1.svg"
 
-function Dashboard ()  {
-  const [searchText, setSearchText] = useState(""); 
+function Dashboard ()  {    
 
-  const handleSearchChange = (e) => {
-    setSearchText(e.target.value);
-  };
-
-    
   return (
     <div className="dashboard-profile">
       <div className="overlap-wrapper">
         <div className="overlap">
+          
+          <LeftBar />
+          <div className='header-container'>
+            <Header />
+          </div>
+
           <div className="rectangle" />
           <img className="img" alt="Rectangle" src={rectangle}/>
-         
-          <div className="search">
-              <input
-                className="text-color"
-                type="text"
-                placeholder="Search Courses, Documents, Activities..."
-                value={searchText}
-                onChange={handleSearchChange}
-              />            
-          </div>
-          <div className="user">
-            <div className="notification">
-              <div className="overlap-group">
-                <img
-                  className="iconly-light-outline-2"
-                  alt="Iconly light outline"
-                  src={Noti}
-                />
-                <div className="ellipse" />
-              </div>
-            </div>
-            <div className="profile">
-              <div className="div">
-                <div className="allura-avatar">
-                  <div className="allura-avatar-2" />
-                  <img
-                    className="allura-avatar"
-                    alt="Allura avatar"
-                    src={Avatar}
-                  />
-                </div>
-                <div className="text-wrapper">akwy666</div>
-              </div>
-            </div>
-          </div> 
+   
           <div className="welcome">
             <div className="overlap-2">
               <p className="you-ve-learned-of">
@@ -164,8 +126,6 @@ function Dashboard ()  {
               </div>
               </div>
               </div>
-
-
 
           <div className="activities">
             <div className="text-wrapper-43">Upcoming Activities</div>
@@ -450,13 +410,10 @@ function Dashboard ()  {
               </div>
             </div>
           </div>
-          */<LeftBar />
-      
-            </div>
+          </div>
           </div>
         </div>
  
     );
 };
 export default Dashboard;
-

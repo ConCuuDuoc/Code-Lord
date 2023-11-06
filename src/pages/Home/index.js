@@ -105,7 +105,6 @@ function Home () {
                     <Col className="group-number-banner">
                         <Row className="group-student">
                             <div className="overlap-group">
-                                <div className="rectangle" />
                                 <div className="text-wrapper">100M+</div>
                                 <div className="div">Students</div>
                             </div>
