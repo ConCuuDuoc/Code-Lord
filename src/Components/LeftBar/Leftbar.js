@@ -57,6 +57,7 @@ function LeftBar () {
             </div>
           </Link>
 
+          <Link to="/coursecart">
           <div className="course-cart">
             <div className="text-wrapper-lb">Course Cart</div>
             <img
@@ -65,6 +66,7 @@ function LeftBar () {
               src={cart}
             />
           </div>
+          </Link>
 
           <Link to="/setting">
             <div className="settings">
