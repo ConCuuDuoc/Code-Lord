@@ -27,6 +27,7 @@ import rightbackgroundimg from '../../images/rightimagesbackground.svg';
 import middlebackgroundimg from '../../images/middleimagesbackground.svg';
 import Background from '../../images/background2.svg';
 import { Link } from 'react-router-dom';
+import Footer from "../../Components/Footer/Footer"; 
 
 function Home () {
 
@@ -46,15 +47,9 @@ function Home () {
                             <a className="nav-link" href="/">Categories</a>
                         </li>
                         <li className="nav-item 3">
-                            <a className="nav-link" href="/">Pricing</a>
-                        </li>
-                        <li className="nav-item 4">
-                            <a className="nav-link" href="/">Forum</a>
-                        </li>
-                        <li className="nav-item 5">
                             <a className="nav-link" href="/">Contact us</a>
                         </li>
-                        <li className="nav-item 6">
+                        <li className="nav-item 4">
                             <a className="nav-link" href="/">About us</a>
                         </li>
                     </ul>
@@ -502,6 +497,7 @@ function Home () {
                     </Col>
                 </Row>
             </Container>
+            <Footer />
         </div>
       );
 }

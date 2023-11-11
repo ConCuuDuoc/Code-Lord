@@ -1040,9 +1040,8 @@ margin-left: 38%;
 .how .background2 {
     width: 1920px;
     margin-left: -25%;
-    background-color: #000000
+    background-color: #000000;
 }
-
 
 .boxsignup {
     height: 280px;
@@ -1155,6 +1154,7 @@ margin-left: 38%;
 .FAQ {
   width: 1920px;
   background-color: #0E1620;
+  height: 800px;
 }
 
 .questions {
@@ -1235,4 +1235,8 @@ margin-left: 38%;
   width: 35%;
   margin-left: 50%;
   margin-top: -23%;
+}
+
+.footer{
+  background-color: #20344A;
 }

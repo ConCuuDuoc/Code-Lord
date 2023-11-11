@@ -12,11 +12,12 @@ import Layout from './layout/Layout.js';
 import Dashboard from './pages/Dashboard/Dashboard';
 import Setting from './pages/Setting/Setting';
 import ChangePassword from './pages/ChangePassword/ChangePassword';
-import Categories from './pages/Categories/Categories';
+// import Categories from './pages/Categories/Categories';
+import Categories from './pages/Categories/Categories.jsx';
 import MyLearning from './pages/MyLearning/MyLearning';
 import Overview from './pages/Overview/Overview';
-import CourseItem from './Components/CourseItem/CourseItem'
-import CourseCart from './pages/CourseCart/CourseCart'
+// import CourseItem from './Components/CourseItem/CourseItem'
+// import CourseCart from './pages/CourseCart/CourseCart'
 
 
 
@@ -51,8 +52,8 @@ export function Auth() {
               <Route exact path="/categories" element={<Categories />} />
               <Route exact path="/mylearning" element={<MyLearning />} />
               <Route exact path="/overview" element={<Overview />} />
-              <Route exact path="/courseitem" element={<CourseItem />} />
-              <Route exact path="/coursecart" element={<CourseCart />} />
+              {/* /* <Route exact path="/courseitem" element={<CourseItem />} /> */}
+              {/* <Route exact path="/coursecart" element={<CourseCart />} />  */}
 
             </Routes>
           </Layout>
