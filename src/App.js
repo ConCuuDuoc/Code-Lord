@@ -5,10 +5,17 @@ import Login from './pages/Login/Login';
 import Resetpassword from './pages/Resetpassword/Resetpassword';
 import Activate from './pages/Activate/Activate';
 import Resetpasswordconfirm from './pages/Resetpasswordconfirm/Resetpasswordconfirm';
+import Setting from './pages/Setting/Setting.js';
+import Dashboard from './pages/Dashboard/Dashboard.js';
+import CourseCart from './pages/CourseCart/CourseCart.js';
+import Categories from './pages/Categories/Categories.js';
+import MyLearning from './pages/MyLearning/MyLearning.js';
+
 import { Provider } from 'react-redux';
 import React from 'react';
 import store from './Store';
 import Layout from './layout/Layout.js';
+
 
 function App() {
   return (
@@ -34,7 +41,11 @@ export function Auth() {
               <Route exact path="/login" element={<Login />} />
               <Route exact path="/activate/:uid/:token" element={<Activate />} />
               <Route exact path="/reset_password" element={<Resetpassword />} />
-              <Route exact path="/password/reset/confirm/:uid/:token" element={<Resetpasswordconfirm />} />
+              <Route exact path="/dashboard/settings" element={< Setting/>} />
+              <Route exact path="/dashboard" element={<Dashboard />} />
+              <Route exact path="/dashboard/coursecart" element={<CourseCart />} />
+              <Route exact path="/dashboard/categories" element={<Categories />} />
+              <Route exact path="/dashboard/mylearning" element={<MyLearning />} />
             </Routes>
           </Layout>
         </div>

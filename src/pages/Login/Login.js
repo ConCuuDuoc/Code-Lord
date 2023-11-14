@@ -31,7 +31,7 @@ const Login = ({ login, isAuthenticated }) => {
     //Redirect to the home page
 
     if (isAuthenticated) {
-        return <Navigate to="/" />
+        return <Navigate to="/dashboard" />
     }
 
     return (
