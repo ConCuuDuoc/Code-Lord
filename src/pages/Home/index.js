@@ -1,5 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './custom.css'
+import React from 'react';
 import Image from 'react-bootstrap/Image';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -24,6 +25,7 @@ import leftbackgroundimg from '../../images/leftimagesbackground.svg';
 import rightbackgroundimg from '../../images/rightimagesbackground.svg';
 import middlebackgroundimg from '../../images/middleimagesbackground.svg';
 import Background from '../../images/background2.svg';
+import { Link } from 'react-router-dom';
 
 function Home () {
     const backgroundColor = {
@@ -64,8 +66,8 @@ function Home () {
                         </ul>
                     </div>
                     <div className="button button-distance">
-                        <button className="btn btn-login button-text poppins-font button-container">Log in</button>
-                        <button className="btn btn-signup button-text poppins-font button-container">Sign up</button>
+                        <Link className="btn btn-login button-text poppins-font button-container" to="/login">Log in</Link>
+                        <Link className="btn btn-signup button-text poppins-font button-container" to="/signup">Sign up</Link>
                     </div>
                 </nav>
                 <Row className="HomeStart">
