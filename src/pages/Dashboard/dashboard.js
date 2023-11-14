@@ -1,59 +1,32 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
 import React from "react";
-import {Navigate} from "react-router-dom";
-import "./dashboard.css";
-import LeftBar from "./Components/LeftBar"; 
-import Header from "./Components/Header"; 
+import "./Dashboard.css";
+import LeftBar from "../../Components/LeftBar/Leftbar"; 
+import Header from "../../Components/Header/Header"; 
+import rectangle from "./images/rectangle-5.svg";
+import Group29 from "./images/Group 29.svg"
+import Group1 from "./images/Group1.svg"
+import Group28 from "./images/Group 28.svg"
+import Image2 from "./images/Image 2.svg"
+import Group from "./images/Group.svg"
+import Document from "./images/Document.svg"
+import Polygon from "./images/Polygon 1.svg"
 
+function Dashboard ()  {    
 
-const DashboardProfile = () => {
-    
   return (
     <div className="dashboard-profile">
       <div className="overlap-wrapper">
         <div className="overlap">
-          <div className="rectangle" />
-          <img className="img" alt="Rectangle" src="./images/rectangle-5.svg" />
-          <Header />
-          {/* <div className="search">
-            <div className="group">
-              <input className="search-courses" placeholder="Search Courses, Documents, Activities..." type="text" />
-              <img
-                className="iconly-light-outline"
-                alt="Iconly light outline"
-                src="https://c.animaapp.com/943Eu3bS/img/iconly-light-outline-search@2x.png"
-              />
-            </div>
+          
+          <LeftBar />
+          <div className='header-container'>
+            <Header />
           </div>
-          <div className="user">
-            <div className="notification">
-              <div className="overlap-group">
-                <img
-                  className="iconly-light-outline-2"
-                  alt="Iconly light outline"
-                  src="https://c.animaapp.com/943Eu3bS/img/iconly-light-outline-notification@2x.png"
-                />
-                <div className="ellipse" />
-              </div>
-            </div>
-            <div className="profile">
-              <div className="div">
-                <div className="allura-avatar">
-                  <div className="allura-avatar-2" />
-                  <img
-                    className="allura-avatar"
-                    alt="Allura avatar"
-                    src="https://c.animaapp.com/943Eu3bS/img/allura-avatar@2x.png"
-                  />
-                </div>
-                <div className="text-wrapper">akwy666</div>
-              </div>
-              <img
-                className="icon-chevron-left"
-                alt="Icon chevron left"
-                src="https://c.animaapp.com/943Eu3bS/img/icon---chevron-left.svg"
-              />
-            </div>
-          </div> */}
+
+          <div className="rectangle" />
+          <img className="img" alt="Rectangle" src={rectangle}/>
+   
           <div className="welcome">
             <div className="overlap-2">
               <p className="you-ve-learned-of">
@@ -67,12 +40,12 @@ const DashboardProfile = () => {
                 </span>
               </p>
               <div className="group-2">
-                <div className="text-wrapper-3">Welcome back, akwy666</div>
-                <img className="image" alt="Image" src="https://c.animaapp.com/943Eu3bS/img/image-296@2x.png" />
+                <div className="text-wrapper-3">Welcome back, akwy666!</div>
               </div>
+              <img className="artboard-1-1" alt="" src={Group} />
             </div>
           </div>
-          <img className="artboard" alt="Artboard" src="https://c.animaapp.com/943Eu3bS/img/artboard-1-1.svg" />
+         
           <div className="calendar">
             <div className="month-selector">
               <div className="overlap-group-wrapper">
@@ -80,7 +53,7 @@ const DashboardProfile = () => {
                   <img
                     className="vector-stroke"
                     alt="Vector stroke"
-                    src="https://c.animaapp.com/943Eu3bS/img/vector-2--stroke-.svg"
+                    src="https://c.animaapp.com/nDae5x4u/img/vector-2--stroke--1.svg"
                   />
                   <div className="text-wrapper-4">JULY 2021</div>
                 </div>
@@ -151,8 +124,9 @@ const DashboardProfile = () => {
                   <div className="text-wrapper-42">31</div>
                 </div>
               </div>
-            </div>
-          </div>
+              </div>
+              </div>
+
           <div className="activities">
             <div className="text-wrapper-43">Upcoming Activities</div>
             <div className="text-wrapper-44">See all</div>
@@ -175,11 +149,6 @@ const DashboardProfile = () => {
                   </div>
                 </div>
               </div>
-              <img
-                className="icon-chevron-left-2"
-                alt="Icon chevron left"
-                src="https://c.animaapp.com/943Eu3bS/img/icon---chevron-left-3.svg"
-              />
             </div>
             <div className="adv-maths">
               <div className="group-wrapper">
@@ -200,11 +169,6 @@ const DashboardProfile = () => {
                   </div>
                 </div>
               </div>
-              <img
-                className="icon-chevron-left-2"
-                alt="Icon chevron left"
-                src="https://c.animaapp.com/943Eu3bS/img/icon---chevron-left-3.svg"
-              />
             </div>
             <div className="dr-dipo">
               <div className="overlap-5">
@@ -245,21 +209,12 @@ const DashboardProfile = () => {
                   </div>
                 </div>
               </div>
-              <img
-                className="icon-chevron-left-2"
-                alt="Icon chevron left"
-                src="https://c.animaapp.com/943Eu3bS/img/icon---chevron-left-3.svg"
-              />
             </div>
             <div className="scroll">
               <div className="rectangle-2" />
             </div>
           </div>
-          <img
-            className="vector-stroke-2"
-            alt="Vector stroke"
-            src="https://c.animaapp.com/943Eu3bS/img/vector-2--stroke--1.svg"
-          />
+
           <div className="completion-progress">
             <div className="overlap-6">
               <div className="text-wrapper-54">Completion Progress</div>
@@ -331,7 +286,7 @@ const DashboardProfile = () => {
                     </div>
                   </div>
                 </div>
-                <img className="group-22" alt="Group" src="https://c.animaapp.com/943Eu3bS/img/group-29@2x.png" />
+                <img className="group-22" alt="Group" src={Group29} />
               </div>
               <div className="JA">
                 <div className="overlap-8">
@@ -343,7 +298,7 @@ const DashboardProfile = () => {
                   <div className="text-wrapper-71">Joshua Ashiru</div>
                   <div className="element-points-3">9.6/10 POINTS</div>
                 </div>
-                <img className="group-24" alt="Group" src="https://c.animaapp.com/943Eu3bS/img/group-27@2x.png" />
+                <img className="group-24" alt="Group" src={Group1} />
               </div>
               <div className="AA">
                 <div className="overlap-8">
@@ -355,7 +310,7 @@ const DashboardProfile = () => {
                   </div>
                   <div className="element-points-4">9/10 POINTS</div>
                 </div>
-                <img className="group-26" alt="Group" src="https://c.animaapp.com/943Eu3bS/img/group-28@2x.png" />
+                <img className="group-26" alt="Group" src={Group28} />
               </div>
             </div>
           </div>
@@ -365,11 +320,10 @@ const DashboardProfile = () => {
               <div className="text-wrapper-74">Performance</div>
               <div className="group-27">
                 <div className="text-wrapper-75">Overall</div>
-                <img className="polygon" alt="Polygon" src="https://c.animaapp.com/943Eu3bS/img/polygon-1.svg" />
+                <img className="polygon" alt="Polygon" src={Polygon} />
               </div>
               <div className="line-chart">
-                <div className="vector-wrapper">
-                  <img className="vector" alt="Vector" src="https://c.animaapp.com/943Eu3bS/img/vector-5.svg" />
+                <div className="vector-wrapper">                 
                 </div>
               </div>
             </div>
@@ -378,9 +332,6 @@ const DashboardProfile = () => {
             <div className="overlap-6">
               <div className="text-wrapper-76">Messages</div>
               <div className="text-wrapper-77">View All</div>
-              <img className="line" alt="Line" src="https://c.animaapp.com/943Eu3bS/img/line-3.svg" />
-              <img className="line-2" alt="Line" src="https://c.animaapp.com/943Eu3bS/img/line-3.svg" />
-              <img className="line-3" alt="Line" src="https://c.animaapp.com/943Eu3bS/img/line-3.svg" />
               <div className="josh">
                 <div className="overlap-10">
                   <div className="text-wrapper-78">15:30 pm</div>
@@ -407,20 +358,10 @@ const DashboardProfile = () => {
                       <div className="group-32">
                         <div className="group-33">
                           <div className="text-wrapper-83">Image .jpg</div>
-                          <img
-                            className="iconly-light-outline-3"
-                            alt="Iconly light outline"
-                            src="https://c.animaapp.com/943Eu3bS/img/iconly-light-outline-image-2@2x.png"
-                          />
                         </div>
                       </div>
                       <div className="group-34">
                         <div className="group-35">
-                          <img
-                            className="iconly-light-outline-4"
-                            alt="Iconly light outline"
-                            src="https://c.animaapp.com/943Eu3bS/img/iconly-light-outline-document@2x.png"
-                          />
                           <div className="text-wrapper-84">Form .jpg</div>
                         </div>
                       </div>
@@ -428,8 +369,9 @@ const DashboardProfile = () => {
                         <div className="group-37">
                           <img
                             className="image-2"
-                            alt="Image"
-                            src="https://c.animaapp.com/943Eu3bS/img/image-2@2x.png"
+                            alt="Image2"
+                            src = {Image2}
+                            
                           />
                           <div className="text-wrapper-85">Image 2 .jpg</div>
                         </div>
@@ -459,7 +401,7 @@ const DashboardProfile = () => {
                       <img
                         className="iconly-light-outline-5"
                         alt="Iconly light outline"
-                        src="https://c.animaapp.com/943Eu3bS/img/iconly-light-outline-document-1@2x.png"
+                        src={Document}
                       />
                       <p className="text-wrapper-92">First Chapter of Project .doc</p>
                     </div>
@@ -468,11 +410,10 @@ const DashboardProfile = () => {
               </div>
             </div>
           </div>
-          <LeftBar />
-            </div>
           </div>
-        </div> 
-
+          </div>
+        </div>
+ 
     );
 };
-export default DashboardProfile;
+export default Dashboard;
