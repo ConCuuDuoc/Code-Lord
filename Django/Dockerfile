@@ -1,0 +1,21 @@
+FROM python:3.10.9
+
+ENV PYTHONDONTWRITEBYTECODE 1
+ENV PYTHONUNBUFFERED 1
+
+WORKDIR /Backend
+
+COPY requirements.txt /Backend/
+
+RUN python -m venv venv
+RUN /app/venv/Scripts/activate
+
+RUN pip install --upgrade pip
+RUN pip install -r requirements.txt
+
+COPY . /app/
+
+EXPOSE 8000
+
+
+CMD ["./venv/Scripts/activate", "python", "manage.py", "runserver", "0.0.0.0:8000"]

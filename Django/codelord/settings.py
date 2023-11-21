@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-wddqqgxw&^al0e-m=2$j*dvqa1ok=+m9%^k2r#$16xz3c&#ut6
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 # Application definition
 
@@ -42,11 +42,14 @@ INSTALLED_APPS = [
     'djoser',
     'accounts',
     'corsheaders',
+    'social_django',
     'rest_framework_simplejwt',
+    'rest_framework_simplejwt.token_blacklist',
     'rest_framework.authtoken'
 ]
 
 MIDDLEWARE = [
+    'social_django.middleware.SocialAuthExceptionMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'corsheaders.middleware.CorsMiddleware',
@@ -70,6 +73,8 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'social_django.context_processors.backends',
+                'social_django.context_processors.login_redirect',
             ],
         },
     },
@@ -133,6 +138,7 @@ USE_I18N = True
 USE_TZ = True
 
 
+
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
@@ -151,10 +157,20 @@ REST_FRAMEWORK = {
     ),
 }
 
+
+AUTHENTICATION_BACKENDS =(
+    'social_core.backends.google.GoogleOAuth2',
+    'social_core.backends.facebook.FacebookOAuth2',
+    'django.contrib.auth.backends.ModelBackend',
+)
+
 SIMPLE_JWT = {
     'AUTH_HEADER_TYPES': ('JWT',),
     'ACCESS_TOKEN_LIFETIME': timedelta(minutes=60),
     'REFRESH_TOKEN_LIFETIME': timedelta(days=1),
+    'AUTH_TOKEN_CLASSES':(
+            'rest_framework_simplejwt.tokens.AccessToken',
+        ),
 }
 
 DJOSER = {
@@ -168,11 +184,26 @@ DJOSER = {
     'USERNAME_RESET_CONFIRM_URL': 'email/reset/confirm/{uid}/{token}',
     'ACTIVATION_URL': 'activate/{uid}/{token}',
     'SEND_ACTIVATION_EMAIL': True,
+    'SOCIAL_AUTH_TOKEN_STRATEGY': 'djoser.social.token.jwt.TokenStrategy',
+    'SOCIAL_AUTH_ALLOWED_REDIRECT_URIS': ['http://localhost:8000/dashboard', 'http://localhost:8000'],
     'SERIALIZERS': {
         'user_create': 'accounts.serializers.UserCreateSerializer',
         'user': 'accounts.serializers.UserCreateSerializer',
+        'current_user': 'accounts.serializers.UserCreateSerializer',
         'user_delete': 'djoser.serializers.UserDeleteSerializer',
     }
+}
+
+SOCIAL_AUTH_GOOGLE_OAUTH2_KEY = '971836066163-pb741kfthh5vfdc7uatb5q16qtsmsqgi.apps.googleusercontent.com'
+SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = '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'
+SOCIAL_AUTH_GOOGLE_OAUTH2_SCOPE = ['https://www.googleapis.com/auth/userinfo.email','https://www.googleapis.com/auth/userinfo.profile','openid']
+SOCIAL_AUTH_GOOGLE_OAUTH2_EXTRA_DATA = ['first_name', 'last_name']
+
+SOCIAL_AUTH_FACEBOOK_OAUTH2_KEY = '1389778308556424'
+SOCIAL_AUTH_FACEBOOK_OAUTH2_SECRET = 'a73181cf0227527e85b906e715bd46fd'
+SOCIAL_AUTH_FACEBOOK_OAUTH2_SCOPE = ['email']
+SOCIAL_AUTH_FACEBOOK_OAUTH2_EXTRA_PARAMS= {
+    'fields': 'email, first_name, last_name'
 }
 
 # Default primary key field type
@@ -181,9 +212,11 @@ DJOSER = {
 AUTH_USER_MODEL = 'accounts.UserAccount'
 
 CORS_ORIGIN_WHITELIST = [
-    'http://localhost:3000'
+    'http://localhost:3000', 'http://localhost:8000'
 ]
 
 CORS_ALLOWED_ORIGINS = [
-    "http://localhost:3000",
+    'http://localhost:3000', 'http://localhost:8000'
 ]
+
+CORS_ORIGIN_ALLOW_ALL = True
