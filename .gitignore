@@ -10,7 +10,6 @@
 
 # production
 FrontTheScene/build
-/Django/build
 
 # misc
 .DS_Store
