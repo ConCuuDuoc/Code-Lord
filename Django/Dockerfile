@@ -5,17 +5,13 @@ ENV PYTHONUNBUFFERED 1
 
 WORKDIR /Backend
 
-COPY requirements.txt /Backend/
+COPY requirement.txt .
 
-RUN python -m venv venv
-RUN /app/venv/Scripts/activate
+RUN pip install -r requirement.txt
 
-RUN pip install --upgrade pip
-RUN pip install -r requirements.txt
-
-COPY . /app/
+COPY . .
 
 EXPOSE 8000
 
 
-CMD ["./venv/Scripts/activate", "python", "manage.py", "runserver", "0.0.0.0:8000"]
+CMD ["python", "manage.py", "runserver", "0.0.0.0:8000"]

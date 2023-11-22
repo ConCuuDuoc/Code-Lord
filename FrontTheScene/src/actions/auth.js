@@ -178,14 +178,14 @@ export const login = (email, password) => async dispatch => {
     }
 };
 
-export const signup = (name, email, password, re_password) => async dispatch => {
+export const signup = (first_name, last_name, email, password, re_password) => async dispatch => {
     const config = {
         headers: {
             'Content-Type': 'application/json'
         }
     };
 
-    const body = JSON.stringify({ name, email, password, re_password });
+    const body = JSON.stringify({ first_name, last_name, email, password, re_password });
 
     try {
         const res = await axios.post(`${process.env.REACT_APP_API_URL}/auth/users/`, body, config);
@@ -195,6 +195,7 @@ export const signup = (name, email, password, re_password) => async dispatch => 
             payload: res.data
         });
     } catch (err) {
+        console.error("Signup failed:", err.response.data);
         dispatch({
             type: SIGNUP_FAIL
         })

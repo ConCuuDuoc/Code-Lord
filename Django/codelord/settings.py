@@ -185,7 +185,7 @@ DJOSER = {
     'ACTIVATION_URL': 'activate/{uid}/{token}',
     'SEND_ACTIVATION_EMAIL': True,
     'SOCIAL_AUTH_TOKEN_STRATEGY': 'djoser.social.token.jwt.TokenStrategy',
-    'SOCIAL_AUTH_ALLOWED_REDIRECT_URIS': ['http://localhost:8000/dashboard', 'http://localhost:8000'],
+    'SOCIAL_AUTH_ALLOWED_REDIRECT_URIS': ['http://localhost:8000/dashboard', 'http://localhost:8000', 'https://cloudkiddie.net', 'https://cloudkiddie.net/dashboard' ],
     'SERIALIZERS': {
         'user_create': 'accounts.serializers.UserCreateSerializer',
         'user': 'accounts.serializers.UserCreateSerializer',
@@ -212,11 +212,11 @@ SOCIAL_AUTH_FACEBOOK_OAUTH2_EXTRA_PARAMS= {
 AUTH_USER_MODEL = 'accounts.UserAccount'
 
 CORS_ORIGIN_WHITELIST = [
-    'http://localhost:3000', 'http://localhost:8000'
+    'http://localhost:3000', 'http://localhost:8000', "https://cloudkiddie.net"
 ]
 
 CORS_ALLOWED_ORIGINS = [
-    'http://localhost:3000', 'http://localhost:8000'
+    'http://localhost:3000', 'http://localhost:8000', "https://cloudkiddie.net"
 ]
 
 CORS_ORIGIN_ALLOW_ALL = True

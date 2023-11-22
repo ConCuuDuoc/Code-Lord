@@ -17,20 +17,21 @@ require('dotenv').config();
 const Register = ({ signup, isAuthenticated }) => {
     const [accountCreated, setAccountCreated] = useState(false);
     const [formData, setFormData] = useState({
-        name: '',
+        first_name: '',
+        last_name: '',
         email: '',
         password: '',
         re_password: '' 
     });
     
-    const {name, email, password, re_password} = formData;
+    const {first_name, last_name, email, password, re_password} = formData;
 
     const onChange = e => setFormData({ ...formData, [e.target.name]: e.target.value });
 
     const onSubmit = e => {
         e.preventDefault();
         if (password === re_password) {
-            signup(name, email, password, re_password);
+            signup(first_name, last_name, email, password, re_password);
             setAccountCreated(true);
         }    
     };
@@ -88,7 +89,10 @@ const Register = ({ signup, isAuthenticated }) => {
                                     <div className="credentials">
                                         <form onSubmit={e=>onSubmit(e)}>
                                             <div className="form-group name">
-                                                <input type="name" className="form-control" placeholder="Kimi no nawa?" name="name" value={name} onChange={e=>onChange(e)} required/>
+                                                <input type="name" className="form-control" placeholder="First name" name="first_name" value={first_name} onChange={e=>onChange(e)} required/>
+                                            </div>
+                                            <div className="form-group name">
+                                                <input type="name" className="form-control" placeholder="Last name" name="last_name" value={last_name} onChange={e=>onChange(e)} required/>
                                             </div>
                                             <div className="form-group emailres">
                                                 <input type="email" className="form-control" placeholder="Email" name="email" value={email} onChange={e=>onChange(e)} required/>
